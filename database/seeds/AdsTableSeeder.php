@@ -13,6 +13,6 @@ class AdsTableSeeder extends Seeder
     public function run()
     {
         // 生成广告图片
-        factory(Ad::class, 30)->create();
+        //factory(Ad::class, 30)->create();
     }
 }

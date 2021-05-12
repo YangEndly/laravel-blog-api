@@ -13,11 +13,12 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         // 生成25个用户
-        factory(User::class, 25)->create();
+        factory(User::class, 10)->create();
         $user = User::first();
-        $user->name = '九歌';
-        $user->email = 'weidaxyy@163.com';
+        $user->name = 'Endly';
+        $user->email = 'yl@endly.cn';
         $user->is_admin = 1;
+        $user->password = 123456;
         $user->save();
 
         // $user2 = User::find(2);
